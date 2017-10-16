@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>STUDENTS DETAILS PAGE</title>
+</head>
+<body>
+	<form>
+				Firstname <br>
+				 <input type = "text" id="firstname" name = "firstname" size ="40"><br><br>
+				Surname <br>
+				<input type = "text" id="surname"    name = "surname" size ="40"><br><br>
+				University<br>
+				<input type = "text" id="university" name = "university" size ="40"><br><br>
+				Course<br>
+				<input type = "text" id="course" name = "course" size ="40"><br><br>
+				
+				<input type = "submit" onclick="alert(myFunction())" value = "Submit">
+	</form>
+	<script>
+			function myFunction() {
+			
+			var firstname = document.getElementById("firstname").value;
+			var surname = document.getElementById("surname").value;
+			var university = document.getElementById("university").value;
+			var course= document.getElementById("course").value;
+								
+			var results = firstname + " " + surname + " "+ university + " " + course;		
+				return 	results;				}
+			
+			
+			
+	</script>
+</body>
+</html>
+
+
