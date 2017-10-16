@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Factorial Calculator</title>
+	<style type="text/css">
+	body {background-color:grey; padding: 30px; border : 2px solid black; text-align: center}
+	</style>
+</head>
+
+<body >
+	<h1>Factorial Calculator</h1>
+
+	<form>
+			<b>Type in the required number <b> <br><br>
+			<input type = "number" id = "number" name = "number" size ="40"><br><br>
+			<input type = "button" onclick="alert(Factorial())" value = "solve">
+				
+	</form>
+	<script>
+		   
+
+		 function Factorial(){
+		var value_gotten = document.getElementById("number").value;
+
+		var product = 1;
+		var holder1;
+		
+		
+		
+		if (value_gotten > 1)
+		{
+			for ( holder1 = value_gotten; holder1 >= 1; holder1--)
+			{
+				product = product * holder1;
+		
+			}
+			var result = "The factorial of " + value_gotten + " is " + product;
+			return result;
+		}
+		else
+		{
+			var result = "Please enter a number above 1";
+			return result;
+		}
+								
+		 };	
+						   
+			
+	</script>
+	
+
+</body>
+</html>
