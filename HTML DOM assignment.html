@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+<div id="myP" >
+  <a id ="blog" href="#blog">Blog</a>
+  <a id ="contact" href="#contact">Contact</a>
+  <a id ="about" href="#about">About</a>
+</div>
+<style>
+.test {background-color: black;}
+#myP a {  display: block;
+  color: white;
+   padding: 14px 16px;
+  text-decoration: none;
+  font-size: 34px;}
+#myP {position:fixed;font-size:50px;}
+
+body {height:1500px;background-color: grey}
+</style>
+</head>
+<body>
+
+<script>
+window.onscroll = function() {myFunction()};
+
+function myFunction() {
+    if (document.documentElement.scrollTop > 100) {
+        document.getElementById("myP").className = "test";
+	   document.getElementById("blog").style.color = "yellow";
+	   document.getElementById("contact").style.color = "yellow";
+	   document.getElementById("about").style.color = "yellow";
+	   
+	   
+    } else {
+        document.getElementById("myP").className = "";
+	   document.getElementById("blog").style.color = "white";
+	   document.getElementById("contact").style.color = "white";
+	   document.getElementById("about").style.color = "white";
+    }
+}
+</script>
+
+</body>
+</html>
+
+
